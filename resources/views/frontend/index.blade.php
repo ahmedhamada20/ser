@@ -31,7 +31,7 @@
                             <div class="form_items">
 
                                 <ul class="ms-5 p-0 list-unstyled">
-                                    @if($quiz->type->type == 1)
+                                    @if($quiz->type->type == 2)
                                     <li>
                                         {{-- <label for="opt_1[{{$quiz->id}}]" class="step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_50ms">
                                             <input type="text" id="opt_1[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / نعم">
