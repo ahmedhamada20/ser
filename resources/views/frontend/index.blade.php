@@ -63,10 +63,12 @@
                                     @else
                                         <li>
                                             <label for="opt_3[{{$quiz->id}}]" class="active step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_150ms">
-                                                <input type="text" id="opt_3[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / اخري">
 
 
                                             </label>
+
+                                            <input type="text" id="opt_3[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / اخري">
+
                                         </li>
 
                                     @endif
