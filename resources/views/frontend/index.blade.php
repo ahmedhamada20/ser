@@ -31,7 +31,26 @@
                             <div class="form_items">
 
                                 <ul class="ms-5 p-0 list-unstyled">
-                                    @if($quiz->type->type == 2)
+
+@if ($quiz->type->type == 2)
+<li>
+     <label for="opt_1[{{$quiz->id}}]" class="step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_50ms">
+        <input type="text" id="opt_1[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / نعم">
+        <span class="text-white">A</span>
+        نعم
+        <span class="pinkLady"></span>
+    </label> 
+
+
+
+</li>
+
+@else
+    <input type="text" id="opt_1[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / نعم">
+
+@endif
+
+                                    {{-- @if($quiz->type->type == 2)
                                     <li>
                                         {{-- <label for="opt_1[{{$quiz->id}}]" class="step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_50ms">
                                             <input type="text" id="opt_1[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / نعم">
@@ -39,39 +58,39 @@
                                             نعم
                                             <span class="pinkLady"></span>
                                         </label> --}}
-                                        <input type="text" id="opt_1[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / نعم">
+                                        {{-- <input type="text" id="opt_1[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / نعم"> --}}
 
 
 
-                                    </li>
-                                    <li>
-                                        <label for="opt_2[{{$quiz->id}}]" class="step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_100ms">
+                                    {{-- </li> --}}
+                                    {{-- <li> --}}
+                                        {{-- <label for="opt_2[{{$quiz->id}}]" class="step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_100ms">
                                             <input type="radio" id="opt_2[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / لاء">
                                             <span class="text-white">B</span>
                                             لا
                                             <span class="salomie"></span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label for="opt_3[{{$quiz->id}}]" class="active step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_150ms">
+                                        </label> --}}
+                                    {{-- </li> --}}
+                                    {{-- <li> --}}
+                                        {{-- <label for="opt_3[{{$quiz->id}}]" class="active step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_150ms">
                                             <input type="radio" id="opt_3[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / اخري">
                                             <span class="text-white">C</span>
                                            أخرى
                                             <span class="wePeep"></span>
-                                        </label>
-                                    </li>
-                                    @else
-                                        <li>
-                                            <label for="opt_3[{{$quiz->id}}]" class="active step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_150ms">
+                                        </label> --}}
+                                    {{-- </li> --}}
+                                    {{-- @else --}}
+                                        {{-- <li> --}}
+                                            {{-- <label for="opt_3[{{$quiz->id}}]" class="active step_1 rounded-pill position-relative animate__animated animate__fadeInRight animate_150ms">
 
 
                                             </label>
 
-                                            <input type="text" id="opt_3[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / اخري">
+                                            <input type="text" id="opt_3[{{$quiz->id}}]" name="name[{{$quiz->id}}]" value="{{ $quiz->name }} / اخري"> --}}
 
-                                        </li>
+                                        {{-- </li> --}}
 
-                                    @endif
+                                    {{-- @endif --}}
 
 
 
